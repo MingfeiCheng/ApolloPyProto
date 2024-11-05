@@ -24,6 +24,6 @@ setup(
     python_requires=">=3.6",  # Specify the Python version compatibility
     install_requires=[
         # Add dependencies here, e.g., 'requests', 'numpy'
-        'protobuf==3.20.1'
+        'protobuf==3.20.2'
     ],
 )
