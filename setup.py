@@ -1,8 +1,14 @@
+import re
+
 from setuptools import setup, find_packages
+
+def get_version():
+    with open("apollo_modules/__init__.py") as f:
+        return re.search(r'__version__ = "(.*?)"', f.read()).group(1)
 
 setup(
     name="apollo_modules",  # Replace with your project name
-    version="9.0.0",  # Initial version
+    version=get_version(),  # Initial version
     author="MingfeiCheng",
     author_email="snowbirds.mf@gmail.com",
     description="This is a package including baidu apollo' proto modules",
