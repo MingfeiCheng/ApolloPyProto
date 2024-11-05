@@ -6,7 +6,7 @@ This project provides Python bindings for the Apollo modules' protobufs, enablin
 
 #### Option 1: Install via pip
 ```bash
-pip install apollo_modules==[version]  # Supported versions: '7.0.0', '8.0.0', '9.0.0'
+pip install apollo_modules==[version]  # Supported versions: see release https://pypi.org/manage/project/apollo-modules/releases/
 ```
 From apollo 8.0, the structure has been changed!
 
