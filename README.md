@@ -6,8 +6,9 @@ This project provides Python bindings for the Apollo modules' protobufs, enablin
 
 #### Option 1: Install via pip
 ```bash
-pip install apollo_modules==[version]  # Supported versions: '7.0.0', '8.0.0', '9.0.0'
+pip install apollo_modules==[version]  # Supported versions: see release https://pypi.org/manage/project/apollo-modules/releases/
 ```
+Note that, to accommodate changes across different versions of Apollo, we provide multiple versions of our package.
 
 #### Option 2: Build from Source
 ```bash
@@ -37,5 +38,5 @@ from apollo_modules.modules.planning.proto.planning_pb2 import ADCTrajectory
 We provide a shell script to automatically generate the Python versions of the protobufs from Apollo’s modules. Use the following command:
 
 ```bash
-./proto_generate.sh /path/to/apollo_root /path/to/output
+bash proto_generate.sh /path/to/apollo_root /path/to/output
 ```
